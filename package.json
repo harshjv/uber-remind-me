@@ -6,6 +6,9 @@
   },
   "author": "Harsh Vakharia",
   "license": "MIT",
+  "engines": {
+    "node": "~4.4.0"
+  },
   "dependencies": {
     "agenda": "^0.8.1",
     "body-parser": "^1.15.2",
