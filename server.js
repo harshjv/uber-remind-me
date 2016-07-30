@@ -90,6 +90,6 @@ app.post('/remind', function (req, res) {
 
 app.use(express.static('public'))
 
-app.listen(7070, function () {
+app.listen(process.env.PORT || 7070, function () {
   console.log('Listening...')
 })
