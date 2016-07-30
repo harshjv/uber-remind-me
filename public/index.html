@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Uber Remind Me!</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="page-header">
+        <h1>Uber Remind Me!</h1>
+      </div>
+      <form method="post" action="/remind">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" name="email" id="email" placeholder="me@xyz.com" required="true">
+        </div>
+        <div class="form-group">
+          <label for="source">Source <small><code>lat, long</code></small></label>
+          <input type="text" class="form-control" name="source" id="source" placeholder="12.0000, 12.0000" required="true">
+        </div>
+        <div class="form-group">
+          <label for="destination">Destination <small><code>lat, long</code></small></label>
+          <input type="text" class="form-control" name="destination" id="destination" placeholder="12.0000, 12.0000" required="true">
+        </div>
+        <div class="form-group">
+          <label for="time">Time</label>
+          <input type="time" class="form-control" name="time" id="time" required="true">
+        </div>
+        <button type="submit" class="btn btn-block btn-success">Remind Me!</button>
+      </form>
+    </div>
+    <div id="dashboard"></div>
+  </body>
+</html>
