@@ -7,10 +7,14 @@ Send an email reminder to user when the best time to book uberGO is approaching!
 
 ## Algorithm
 
-> Assumptions:
-> 1. (`maxUberDuration`) Maximum time uberGO will take to arrive - _20 min_
-> 2. (`deviation`) Maximum deviation due to traffic - _1 hr_
-> 3. (`maxTravelDuration`) Maximum time to reach the destination - _Estimated Duration by Google Maps_ + `maxUberDuration` + `deviation`
+> **Assumptions**
+>
+> 1. Maximum time uberGO will take to arrive - _20 min_ (`maxUberDuration`)
+>
+> 2. Maximum deviation due to traffic - _1 hr_ (`deviation`)
+>
+> 3. Maximum time to reach the destination - _Estimated Duration by Google Maps_ + `maxUberDuration` + `deviation` (`maxTravelDuration`)
+>
 > 4. Even if no uberGO is available at that time, remind the user!
 
 ```
